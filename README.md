@@ -18,7 +18,11 @@
 |學生E |調試程式、製作收銀員Class|
 |學生F |製作會員Class功能、整合代碼|
 
-
+## 參考資料
+《Assembly Language for x86 Processors》  
+http://godleon.blogspot.com/2008/02/assembly-segment.html    
+https://patorjk.com/software/taag    
+https://www.bootschool.net/chinese-to-ascii  
 
 
 
