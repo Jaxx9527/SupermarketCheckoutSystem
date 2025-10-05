@@ -12,9 +12,9 @@ using namespace std;
 
 int main() {
 	PunchCardSystem punchCardSystem;
-	const int employeeId[3] = {1115520, 1115521, 1115532};  // ¤T­Ó­û¤u ID 
-	const string employeeName[3] = {"Toothless", "Rick Astley", "Hitler"}; // ­û¤u¦W¦r
-	int hasPunchedIn = -1;  // ¼Ğ°O¬O½Ö¦b¤W¯Z
+	const int employeeId[3] = {1115520, 1115521, 1115532};  // ä¸‰å€‹å“¡å·¥ ID 
+	const string employeeName[3] = {"Toothless", "Rick Astley", "Hitler"}; // å“¡å·¥åå­—
+	int hasPunchedIn = -1;  // æ¨™è¨˜æ˜¯èª°åœ¨ä¸Šç­
 
 	int info_q = 3;
 
@@ -43,20 +43,20 @@ int main() {
 
 	while (true) {
 		if(hasPunchedIn != -1)
-			cout << "­û¤u : " << employeeName[hasPunchedIn] << "\n\n";
-		cout << "1. " << (hasPunchedIn != -1 ? "¤U¯Z" : "¿é¤J­û¤uÃÑ§O½X¶}©l¤W¯Z") << endl;
-		cout << "2. ¶}©lµ²±b" << endl;
-		cout << "3. Åã¥Ü©Ò¦³¥´¥d¬ö¿ı" << endl;
-		cout << "4. Â÷¶}" << endl;
+			cout << "å“¡å·¥ : " << employeeName[hasPunchedIn] << "\n\n";
+		cout << "1. " << (hasPunchedIn != -1 ? "ä¸‹ç­" : "è¼¸å…¥å“¡å·¥è­˜åˆ¥ç¢¼é–‹å§‹ä¸Šç­") << endl;
+		cout << "2. é–‹å§‹çµå¸³" << endl;
+		cout << "3. é¡¯ç¤ºæ‰€æœ‰æ‰“å¡ç´€éŒ„" << endl;
+		cout << "4. é›¢é–‹" << endl;
 
 		int choice;
-		cout << "\n½Ğ¿é¤J¿ï¶µ(1/2/3/4) : ";
+		cout << "\nè«‹è¼¸å…¥é¸é …(1/2/3/4) : ";
 
 		while (!(cin >> choice)) {
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 			a.reset();
-			cout << "\n«Dªk¿é¤J¡A½Ğ¿é¤J¿ï¶µ(1/2/3/4)";
+			cout << "\néæ³•è¼¸å…¥ï¼Œè«‹è¼¸å…¥é¸é …(1/2/3/4)";
 		}
 
 		switch (choice) {
@@ -69,7 +69,7 @@ int main() {
 			}
 			else {
 				a.reset();
-				cout << "½Ğ¿é¤J­û¤uÃÑ§O½X¶}©l¤W¯Z\n\n";
+				cout << "è«‹è¼¸å…¥å“¡å·¥è­˜åˆ¥ç¢¼é–‹å§‹ä¸Šç­\n\n";
 			}
 			break;
 		case 2:
@@ -101,13 +101,13 @@ int main() {
 						cout << "Membership? (Enter \"yes\" or \"no\") : ";
 						cout << "\nInvalid Entry!! \n\n";
 				}
-				cout << "\n«ö¥ô·N«öÁäÄ~Äò~~";
+				cout << "\næŒ‰ä»»æ„æŒ‰éµç¹¼çºŒ~~";
 				cin >> go;
 				a.reset();
 			}
 			else {
 				a.reset();
-				cout << "\n§AÁÙ¨S¤W¯Z!\n\n";
+				cout << "\nä½ é‚„æ²’ä¸Šç­!\n\n";
 			}
 			break;
 		case 3:
@@ -117,12 +117,12 @@ int main() {
 		case 4:
 			if (hasPunchedIn == -1) {
 				a.reset();
-				cout << "¥¿¦bÂ÷¶}¥´¥d¨t²Î......" << endl;
+				cout << "æ­£åœ¨é›¢é–‹æ‰“å¡ç³»çµ±......" << endl;
 				return 0;
 			}
 			else {
 				a.reset();
-				cout << "§AÁÙ¦b¤W¯Z!\n\n";
+				cout << "ä½ é‚„åœ¨ä¸Šç­!\n\n";
 				break;
 			}
 		default:
@@ -138,7 +138,7 @@ int main() {
 			}
 			if (b == false) {
 				a.reset();
-				cout << "\n¤£¦s¦bªº¿ï¶µ¡A½Ğ¿é¤J¿ï¶µ(1/2/3/4)\n\n";
+				cout << "\nä¸å­˜åœ¨çš„é¸é …ï¼Œè«‹è¼¸å…¥é¸é …(1/2/3/4)\n\n";
 			}
 		}
 				
