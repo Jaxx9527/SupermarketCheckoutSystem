@@ -1,0 +1,7 @@
+123 potato 10 90
+234 coconut 20 80
+345 avocado 30 70
+456 canned_tuna 40 60
+567 zucchini 50 50
+678 da_gud_shit 420 10
+789 electric_bidet 10000 99
